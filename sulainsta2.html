@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram</title>
+	<link rel="icon" type="icon/ico" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body align="center">
+	<style type="text/css">
+		.container 
+		{
+			    padding-right: 36px;
+			    padding-left: 15px;
+			    margin-right: auto;
+			    margin-left: auto;
+		}
+		select
+		{			
+			font-family: inherit;
+		    font-size: inherit;
+		    line-height: inherit;
+		    border: none;
+		    outline: none;
+		    color: #0095f6;
+		    background: white;
+		}
+		input:focus
+		{
+			border: 1px solid #262626;
+		}
+		input
+	    {
+	        display: block;
+		    border-radius: 3px;
+		    border: 1px solid #dbdbdb;
+		    width: 275px;
+		    padding-top: 5px;
+		    padding-bottom: 5px;
+		    margin-top: 8px;
+		    padding-left: 9px;
+		    outline: none;
+		    background: #f6f6f6;
+
+		}
+	    ::placeholder
+	    {
+	    	font-size:12px;
+	    	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	    	color: #8e8e8e;
+	    }
+		#tit
+		{
+		background-image: url(https://drive.google.com/uc?id=10sVZm8CmUep6WbsIWqh_XxmV4Pa0LVb3);
+		/*background-size: 150px 150px;*/
+		background-repeat: no-repeat;
+		padding-left: 186px;
+	    padding-top: 21px;
+	    padding-bottom: 55px;
+		display: inline-block;
+		margin-top: 15px;
+
+     	}
+     	#fb
+          {
+          	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+          	position: relative;
+          	top: 50px;
+           	font-weight: bold;
+           	left: 10px;
+          	font-weight: 600;
+          	/*background: #0095f6;*/
+            color: #0095f6;
+            top: -9px;
+            font-size: 12px;
+            }
+	   		.fa-facebook 
+          {
+			    background: #0095f6;
+			    color: white;
+			    padding-left: 5px;
+			    padding-right: 5px;
+			    padding-top: 3px;
+			    margin-right: 4px;
+			    border-radius: 13px;
+          }
+          hr
+          {
+		    margin-top: 20px;
+		    margin-bottom: 20px;
+		    border: 0;
+		    border-top: 1px solid #dbdbdb;
+          }
+           #left
+	     {
+			  position: relative;
+			  top: 66px;
+			 width: 118px;
+   			 right: 71px;
+         }
+	    #right
+	    {	   
+		    position: relative;
+		    top: 6px;
+		    width: 122px;
+    		left: 86px;
+        }
+	      b
+	     {
+		    position: relative;
+		    top: 35px;
+		    left: 5px;
+		    color: #8e8e8e;
+		    font-weight: 547;
+
+         }
+          #mail
+          {
+		    padding-top: 8px;
+		    padding-bottom: 8px;
+          }
+          #pass
+          {
+          	 padding-top: 8px;
+		    padding-bottom: 7px;
+          }
+          
+		   button
+	    {
+	    	/*padding-left: 110px;
+    		padding-right: 111px;*/
+    		    width: 277px;
+    		background: #b2dffc;
+    		outline: none;
+    		border: none;
+    		color: #fffafd;
+    		border-radius: 3px;
+    		margin-top: 40px;
+		    padding-top: 6px;
+		    padding-bottom: 6px;
+		    position: relative;
+   			 left: 9px;
+	    }
+	    button:active
+	    {
+	    	background: #b2dffc;
+	    }
+	    #signing
+		  {
+		  	text-decoration:none;
+		  	color: #131415;
+		  	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+		  }
+		  #login-form2
+          {
+          	
+          	
+          	
+          	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+          	padding-top: 20px;
+          	padding-bottom: 10px;
+          	/*margin-top: 16px;*/
+          	display: inline-block;
+          	margin-left: 16px;
+		    color: #262626;
+		    width: 228px;
+		    font-size: 11px;
+		    position: relative;
+		    top: -13px;
+          }
+          #login-form3
+          {
+          	position: relative;
+    		top: -60px;
+    		display: inline-block;
+    		font-size: 12px;
+          }
+
+
+		.footer
+		{
+		    background: #f3f3f3;
+		    width: 267px;
+		    position: relative;
+		    left: 7px;
+		    border-top: 1px solid;
+		    height: 29px;
+		}
+		#eye-open
+		{
+			/*position: absolute;
+			top: 187px;
+			display: inline-block;
+			right: 222px;
+			left: 465px;
+			cursor: pointer;*/	
+		}
+		#eye-close
+		{
+			/*position: absolute;
+		    top: 187px;
+		    display: inline-block;
+		    right: 222px;
+		    left: 465px;
+		    display: none;
+		    cursor: pointer;
+*/		}
+
+	</style>
+
+	<div style="margin-top: 13px;">
+		   <select>
+				<option>ENGLISH</option>
+				<option>English</option>
+				<option>English</option>
+				<option>English</option>
+	       </select>
+	</div>
+	<div class="container">
+		<div id="tit">
+			
+		</div>
+	<div style="position: relative;top: -18px;">	
+		 <form style="display: inline-block;position: relative;left: 10px;top: 26px">
+		     <input id="mail" type="email" placeholder="Phone number, username, or email" name="mail" required>
+		     <input id="pass"type="password" value=""  onkeyup="pas()" placeholder="Password" name="pass" required>
+	     </form>
+	     <div><button>Log In</button></div>
+	     <div id="login-form2">
+           		<p><span style="color: #868e94;">Forget your login details?</span>  <span style="color: #0095f6;font-weight: 600;"><a style="" id="signing" href="">Get help signing in.</a></span></p>
+           </div> 
+         <div>
+		    <span id="fb" style=""><i class="fa fa-facebook"></i>Log in with Facebook</span>
+		</div>
+		
+		<div style="position: relative;top: -64px;">
+	         <hr id="left">
+	       	 <b>OR</b>
+	       	<hr id="right">
+	     </div>
+	     <div id="login-form3">
+           		<p style="margin-left: 32px;width: 203px;color:#262626;"><span style="color: #79838c;">Don't have an account?</span>  <span style="color: #0095f6;font-weight: 600;"><a style="color: #000000" id="signup" href="">Sign up</a></span></p>
+           </div> 
+           <center>
+		   <div class="footer">
+		   	
+		   	 <h6 style="color: #8a8989">Instagram from Facebook </h6>
+		   </div>
+		   </center>
+		   <div style="position: relative; top: -308px;left: 129px;display: inline-block;"><span style="cursor: pointer;" id="eye-open" onclick="show()"class="glyphicon glyphicon-eye-open"></span></div>
+		   <div style="position: relative; top: -308px;left: 126px;display: inline-block;"><span style="display: none;cursor: pointer;" id="eye-close" onclick="hide()"class="glyphicon glyphicon-eye-close"></span></div>
+           </center>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+	    var x=document.getElementById('pass');
+		var y=document.getElementById('eye-open');
+		var z=document.getElementById('eye-close');
+;		function show()
+		{
+			if(x.type='password')
+			{
+				x.type='text';
+				y.style.display='none';
+				z.style.display='block';
+             }
+		}
+		function hide()
+		{
+			if (x.type='text') 
+			{
+				x.type='password';
+				y.style.display='block';
+				z.style.display='none';
+			}
+
+		}
+
+	</script>
+	
+
+</body>
+</html>

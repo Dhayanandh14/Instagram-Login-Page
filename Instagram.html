@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram</title>
+	<link rel="icon" type="icon/ico" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body >
+	<style type="text/css">
+		#phone
+		{
+			background-image: url(instaphone.png);
+			background-repeat: no-repeat;	
+			/*background-size:  460px 900px ;	*/
+			height: 601px;
+			margin-top: 76px;
+    		margin-left: 124px;
+            width:141%;
+		}
+		img 
+		{
+		    position: relative;
+		    top: 98px;
+		    left: 152px;
+	    }
+	    #login-form
+	    {
+	    	display: inline-block;
+	    	margin-top: 105px;
+	    	background-image: url(instaword.png);
+	    	background-repeat: no-repeat;
+	    	background-position: center top;
+            border: 1px solid #dbdbdb;
+            padding-left: 38px;
+		    padding-right: 38px;
+		    padding-top: 55px;
+		    padding-bottom: 29px;
+	    
+	    }
+	    form
+	    {
+	    	display: block;
+	    	position: relative;
+	    	top: 50px;
+	    	
+	    }
+	    input
+	    {
+	        display: block;
+		    border-radius: 3px;
+		    border: 1px solid #dbdbdb;
+		    width: 258px;
+		    padding-top: 5px;
+		    padding-bottom: 5px;
+		    margin-top: 8px;
+		    padding-left: 9px;
+		    outline: none;
+
+		}
+		input:focus
+		{
+			border: 1px solid #262626;
+		}
+	    ::placeholder
+	    {
+	    	font-size:12px;
+	    	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	    	color: #8e8e8e;
+	    }
+	    button
+	    {
+	    	/*padding-left: 110px;
+    		padding-right: 111px;*/
+    		    width: 260px;
+    		background: #b2dffc;
+    		outline: none;
+    		border: none;
+    		color: #fffafd;
+    		border-radius: 3px;
+    		margin-top: 12px;
+		    padding-top: 4px;
+		    padding-bottom: 4px;
+	    }
+	    button:active
+	    {
+	    	background: #b2dffc;
+	    }
+	    #left
+	    {
+		  position: relative;
+		  top: 65px;
+		  width: 106px;
+		  /*right: 81px;*/
+          margin-right: 0px;
+          margin-left: 0px;
+	    }
+	    #right
+	    {	   
+		    position: relative;
+		    top: 6px;
+		    width: 119px;
+		    left: 77px;
+	    }
+	    b
+	     {
+		    position: relative;
+		    top: 34px;
+		    left: 118px;
+		    color: #8e8e8e;
+		    font-weight: 547;
+
+         }
+        
+         hr 
+         {
+		    margin-top: 20px;
+		    margin-bottom: 20px;
+		    border: 0;
+		    border-top: 1px solid #dbdbdb;
+          }
+          #mail
+          {
+		    padding-top: 8px;
+		    padding-bottom: 8px;
+          }
+          #pass
+          {
+          	 padding-top: 8px;
+		    padding-bottom: 7px;
+          }
+          .fa
+           {
+			     padding-top: 4px;
+			    font-size: 12px;
+			    width: 18px;
+			    text-align: center;
+			    text-decoration: none;
+			    height: 18px;
+  				margin-right: 10px;
+            }
+  	   	</style>
+
+	   	<style type="text/css">
+	   		#get
+	   		{
+	   			font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	   			margin-top: 22px;
+	   			margin-left: 126px;
+	   			font-size: 14px;
+	   		}
+
+	   	  #fb
+          {
+          	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+          	position: relative;
+          	top: -7px;
+           	font-weight: bold;
+           	left: 49px;
+           	color: #385185;
+          	font-weight: 600;
+          }
+	   		.fa-facebook 
+          {
+			  background: #3B5998;
+			  color: white;
+          }
+          #login-form2
+          {
+          	border: 1px solid #dbdbdb;
+          	display: inline-block;
+          	padding-right: 67px;
+          	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+          	padding-top: 20px;
+          	padding-bottom: 10px;
+          	margin-top: 16px;
+          }
+          #appstore 
+          {
+			 width: 136px;
+	         height: 40px;
+	   	     position: relative;
+	         top: 1px;
+		     left: 26px;
+          }
+		 #playstore 
+		  {
+		    width: 135px;
+		    height: 40px;
+		    position: relative;
+		    top: 1px;
+    		left: 30px;
+           }
+           #app
+          {
+		    display: inline-block;
+		    width: 64%;
+           }
+          
+		  #for
+		  {
+		  	position: relative;
+		  	left: 88px;
+		  	top: 9px;
+		  	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+		  	font-size: 12px;
+		  	width: 40%;
+		  	display: inline-block;
+		  }
+		  #signup
+		  {
+		  	text-decoration:none;
+		  	color: #0095f6;
+		  	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+		  }
+		  #footer
+		  {
+		  		list-style-type: none;
+		  		margin-top: 42px;
+		  }
+		  #foot
+		  {
+		  	float: right;
+		  	padding-left: 16px;
+    		font-size: 13px;
+    		font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    		font-weight: 500;
+    		color: #00376b;
+    		
+    		float: left;
+		  }
+		  #foot>a
+		  {
+		  	color: #00376b;
+
+		  }
+	    #copy
+	   { 
+	   	   display: inline-block;
+		    margin-left: 72px;
+		    font-size: 12px;
+		    color: #8e8e8e;
+		    font-family: "Helvetica Neuse",Helvetica,Arial,sans-serif;
+		    font-weight: 700;
+		}
+		#show
+		{
+			display: inline-block;
+		    position: absolute;
+		    top: 55px;
+		    left: 210px;
+		    cursor: pointer;
+		    display: none;
+		}
+		#hide
+		{
+			display: inline-block;
+		    position: absolute;
+		    top: 55px;
+		    left: 210px;
+		    display: none;
+		    cursor: pointer;
+		}
+	   	</style>
+		}
+
+
+
+	<div class="container" style="position: relative;top: -38px;">
+		<div class="row">
+			<div class="container" >
+	   	  <div class="col-sm-6">
+            <div id="phone">
+            	<img src="slideone.jpg">
+            </div>
+          </div>
+       <div class="col-sm-6">
+          <div id="login-form">
+             <form name="form">
+	          		<input id="mail" type="email" placeholder="Phone number, username, or email" name="mail" required>
+	          		<input id="pass"type="password" value=""  onkeyup="pas()" placeholder="Password" name="pass" required>
+	          		<button>Log In</button>
+	          		<p id="show" onclick="show()">Show</p>
+	          		<p id="hide" onclick="hide()">Hide</p>
+	          </form>
+	          <div>
+	          	<hr id="left">
+	          	 <b>OR</b>
+	       		<hr id="right">
+	         </div>
+	          	<div style=" margin-top: 39px;">
+	          		<span id="fb" style=""><i class="fa fa-facebook"></i>Log in with Facebook</span>
+	          	</div>
+				  	<div style="" id="for">
+				          	<a href="https://www.instagram.com/accounts/password/reset/" style="text-decoration:none;">Forgot password?</a>
+		        	</div>
+          </div>
+           <div id="login-form2">
+           		<p style="margin-left: 67px;width: 203px;color:#262626;">Don't have an account?  <span style="color: #0095f6;font-weight: 600;"><a style="" id="signup" href="">Sign up</a></span></p>
+           </div>  
+           <p style="" id="get">Get the app.</p>
+           <div id="app">    
+	           <a  href=""><img id="appstore" src="appstore.png"></a>  
+	           <a href=""><img id="playstore" src="playstore.png"></a>   
+           </div>	
+      </div>
+    </div>
+  </div>
+</div>
+		<div class="container">
+				<nav>
+					<div class="container" style="height: 100px;">
+					<ul id="footer">
+						<li id="foot"><a href="">ABOUT</a> </li>
+						<li id="foot"><a href="">HELP</a></li>
+						<li id="foot"><a href="">PRESS</a></li>
+						<li id="foot"><a href="">API</a></li>
+						<li id="foot"><a href="">JOBS</a></li>
+						<li id="foot"><a href="">PRIVACY</a></li>
+						<li id="foot"><a href="">TERMS</a></li>
+						<li id="foot"><a href="">LOCATION</a></li>
+						<li id="foot"><a href="">TOP ACCOUNTS</a></li>
+						<li id="foot"><a href="">HASHTAGS</a></li>
+						<li id="foot"><a href="">LANGUAGE</a></li>
+					</ul>
+					<p id="copy">© 2020 INSTAGRAM FROM FACEBOOK</p>
+					</div>
+				</nav>
+
+		</div>
+		<script type="text/javascript">
+
+			x=document.getElementById('pass');
+			y=document.getElementById('show');
+			z=document.getElementById('hide');
+			function pas()
+
+			{
+
+
+
+				if (document.form.pass.value.length>0 )
+				 {
+				 	if (x.type='password') 
+				 	{
+
+					 	y.style.display='block'
+					 	z.style.display='none'
+				 	}
+				 	else
+				 	{
+				 		
+				        y.style.display='none'
+					 	z.style.display='block'	
+				 	}
+				 }
+				 /*else if(document.form.pass.value.length<0)
+				 {
+				 	
+				 	z.style.display='none'
+				 	y.style.display='none'
+
+				 }*/
+				 /*else if(document.form.pass.value.length<0)
+				 {
+				 	y.style.display='block'
+				 }*/
+
+				/*if (x.type='password')
+				 {
+				 	
+				 	
+				 }
+				 else
+				 {
+				 	z.style.display='block';
+				 }*/
+			}
+			
+			/*function pass()
+			{
+				if (y.style.display='none') 
+				{
+					y.style.display='block'
+				}
+			}
+*/			function show()
+			 {
+				
+				if (x.type==='password')
+				 {
+				 	x.type='text';
+				 	y.style.display='none';
+				 	z.style.display='block';
+				 }
+				 
+
+			}
+			function hide()
+			{
+			 if(x.type=='text') 
+			 {
+			 	x.type='password'
+			 	y.style.display='block';
+			 	z.style.display='none'
+
+			 }
+			}
+
+		</script>
+
+</body>
+</html>
